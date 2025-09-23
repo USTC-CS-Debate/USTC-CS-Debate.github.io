@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+{% if page and page.meta and page.meta.template %}
+<div id="waline-container" style="margin-top: 80px;padding-top: 12px;"></div>
+{% endif %}
+{% endblock %}
+
+{% block styles %}
+{{ super() }}
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+
+<style>
+    .md-grid {
+        max-width: 1200px;
+    }
+
+    div[data-waline] {
+        width: 110%;
+        margin-left: -5%;
+    }
+
+    :root {
+        --md-primary-fg-color: #27ae60;
+        --md-accent-fg-color: #2ecc71;
+    }
+
+</style>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{% if page and page.meta and page.meta.template %}
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+<script>
+    Waline.init(
+        {
+            el: '#waline-container',
+            serverURL: "https://waline.cflmy.top/",
+        }
+    )
+</script>
+{% endif %}
+{% endblock %}

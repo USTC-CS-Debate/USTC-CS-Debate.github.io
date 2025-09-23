@@ -1,5 +1,22 @@
-site_name: myproject
-nav:
-- Home: index.md
-- Test: test.md
+site_name: 中国科学技术大学计算机科学与技术学院辩论队主页
+theme:
+    name: material
+    custom_dir: custom
+    logo: "img/logo.webp"
+    favicon: "img/icon.webp"
+    language: "zh"
+    features:
+        - navigation.instant
+        - navigation.tabs
+markdown_extensions:
+    - meta
+    - md_in_html
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji 
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+plugins:
+    - search 
+    - plantuml:
+        puml_url: https://www.plantuml.com/plantuml/
 
