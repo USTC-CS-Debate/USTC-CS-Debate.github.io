@@ -25,4 +25,5 @@ git merge #合并
 ```shell
 git add . #在本地提交所有更改
 git commit -m "变更的注释信息" #commit
-git push origin main 
+git push origin main #推送到远端
+```
