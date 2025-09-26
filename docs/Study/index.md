@@ -17,6 +17,7 @@ template: main.html
 ## cs学习资料详情
 
 * [几个常用 IDE 的安装方法](assert/cs/几个常用 IDE 的安装方法.pdf)
+* [数据结构-第1章 绪论](assert/cs/数据结构-第1章 绪论.pdf)
 
 ## english学习资料详情
 
