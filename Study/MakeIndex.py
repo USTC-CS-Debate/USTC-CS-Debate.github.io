@@ -9,7 +9,7 @@ MakeIndex.py - 自动生成学习资源索引
 索引包含文件夹卡片和详细的PDF文件列表。
 
 使用方法：
-    python MakeIndex.py
+    python docs/Study/MakeIndex.py
 
 作者：AI助手
 日期：2024
